@@ -4,9 +4,9 @@ import axios from 'axios';
 
 const withTokenInstance = axios.create({
     baseURL: 'https://localhost:5500',
-    // headers: {
+    // headers: {                               //!Not recommended
     //     Authorization: `Bearer ${token}`   //!Not recommended
-    //   }
+    //   }                                      //!Not recommended
 });
 
 
