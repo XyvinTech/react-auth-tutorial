@@ -2,7 +2,7 @@ import withTokenInstance from "./axiosInstances";
 
 export const getUserData = async () => {
     try {
-        withTokenInstance.get(`/api/users`)   //baseurl is already attached with instance so does the headers
+        await withTokenInstance.get(`/api/users`)   //baseurl is already attached with instance ,so does the headers+token
     } catch (error) {
         console.error(error)
     }
